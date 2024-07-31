@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      String output="";
+      String str="hello i am disha mudgal";
+      String []strArr  =str.split(" ");
+      for(String s:strArr){
+        output=s+" "+output;
+        
+      }
+      System.out.println(output);
+     
+  }
+}
