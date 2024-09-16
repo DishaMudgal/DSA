@@ -1,0 +1,36 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int n=2;
+        if(n==2){
+          System.out.println("1");
+            return;
+        }
+        if(n==3){
+            System.out.println("2");
+            return;
+        }
+        int count=0;
+        int x=n/2;
+        
+        if(n%2==0){
+            n=n/x;
+            count++;
+            n=n-1;
+            count++;
+        }
+        
+        else{
+            n=n-1;
+            count++;
+              n=n/x;
+            count++;
+           n=n-1;
+            count++;
+        }
+        System.out.print(count);
+       
+    }
+}
