@@ -1,0 +1,25 @@
+//LINKEDLIST CREATION
+package LinkedList;
+
+public class LinkedListCreation{
+
+	public static void main(String[] args) {
+		 Node n= new Node(10);
+		 Node m= new Node(20);
+		 Node o= new Node(30);
+		 Node p= new Node(40);
+		   n.next=m;
+		   m.next=o;
+		   o.next=p;
+		 System.out.println(m);
+		 System.out.println(n.next);
+	}
+
+}
+class Node{
+	int data;
+	Node next;
+	Node(int i){
+		this.data=i;
+	}
+}
