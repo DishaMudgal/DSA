@@ -1,0 +1,16 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        int n=6,m=30,divi=0,notd=0;
+       for(int i=1;i<=m;i++){
+           if(i%6==0){
+               divi=divi+i;
+           }
+           else{
+               notd=notd+i;
+           }
+          
+       }
+     int  output=notd-divi;
+     System.out.println(output);
+    }
+}
