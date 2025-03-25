@@ -1,0 +1,28 @@
+
+import java.util.*;
+import java.util.stream.Collectors;
+class Main {
+    public static void main(String[] args) {
+      int[] arr1={2,3,4,9,5,68,7383};
+      int[] arr2={21,32,34,55,26,6538};
+      double ans=another.arrayintoarraylist(arr1,arr2);
+      System.out.printf("%.5f%n",ans);
+    }
+}
+class Another{
+    public static  double  arrayintoarraylist(int[] arr1,int[] arr2){
+       List<Integer> al=new ArrayList<>();
+        List<Integer> al2=new ArrayList<>();
+       al=Arrays.stream(arr1).boxed().collect(Collectors.toList());
+       al2=Arrays.stream(arr2).boxed().collect(Collectors.toList());
+      al.addAll(al2);
+      Collections.sort(al);
+        int length=al.size();
+          if( length%2==0){
+               return  al.get((length/2)-1)+al.get(length/2);
+          }
+         else{
+                return al.get(length/2);
+               }
+    }
+}
