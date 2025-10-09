@@ -1,0 +1,25 @@
+class Main {
+    public static void main(String[] args) {
+      String str="456789";
+     int a= Integer.parseInt(str);
+    int output=Add(a);
+      while(output>9){
+         System.out.println(output);
+        a=output;
+        output=Add(a);
+        
+      }
+         System.out.println(output);
+   }
+    public  static int Add(int a){
+        int sum=0, digit=0;
+    while(a>0){
+        digit=a%10;
+        a=a/10;
+        sum=sum+digit;
+        
+    }
+    return sum;
+        
+    }
+}
