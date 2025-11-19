@@ -1,0 +1,36 @@
+class Main {
+    public static void main(String[] args) {
+        int a=36;
+        int b=60;
+        
+        int [] aa=divisor(a);
+          int[] bb= divisor(b);
+          int ans=0;
+    
+         for(int i=aa.length-1;i>0;i--){
+             if(aa[i]==0) continue;
+             for(int j=bb.length-1;j>0;j--){
+                  if(bb[j]==0) continue;
+                 if(aa[i]==bb[j]){
+                      ans=aa[i];
+                     System.out.println(ans);
+                     return;
+                 }
+             }
+         }
+    }
+         public static int[] divisor(int a){
+                int k=0;
+         int[] aa=new int[a/2];
+        for(int i=2;i<=a/2;i++){
+              if(a%i==0){
+                  aa[k]=i;
+                  k++;
+              }
+        }
+         return aa;
+        }
+}
+        
+    
+}
