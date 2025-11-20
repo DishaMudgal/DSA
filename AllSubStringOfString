@@ -1,0 +1,16 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        String str="abcd";
+        int n=str.length();
+        ArrayList<String> al=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<=n;j++) {
+                al.add(str.substring(i,j));     
+        }
+        }
+        for(String i:al){
+        System.out.println(i);
+    }
+}
+}
